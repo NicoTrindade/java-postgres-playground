@@ -2,39 +2,9 @@ package com.example;
 
 public class AppCliente {
     
-    class Cliente{
-        private double renda;
-        private char sexo;
-        private int anoNascimento;
-
-        public double getRenda(){
-            return renda;
-        }
-
-        public void setRenda(double renda){
-            this.renda = renda;
-        }
-
-        public char getSexo() {
-            return sexo;
-        }
-
-        public void setSexo(char sexo) {
-            this.sexo = sexo;
-        }
-
-        public int getAnoNascimento() {
-            return anoNascimento;
-        }
-
-        public void setAnoNascimento(int anoNascimento) {
-            this.anoNascimento = anoNascimento;
-        }
-
-    }
-
     public static void main(String[] args) {
-        Cliente cliente new Cliente();
+        System.out.println();
+        Cliente cliente = new Cliente();
 
         cliente.setRenda(10000);
         cliente.setSexo('M');
@@ -43,6 +13,19 @@ public class AppCliente {
         System.out.println("Renda do cliente: " + cliente.getRenda());
         System.out.println("Sexo: " + cliente.getSexo());
         System.out.println("Ano de Nascimento: " + cliente.getAnoNascimento());        
+        System.out.println();
+
+        Cliente cliente2 = new Cliente();
+
+        cliente2.setRenda(-4000);
+        cliente2.setSexo('F');
+        cliente2.setAnoNascimento(1982);
+        
+        System.out.println("Renda do cliente2: " + cliente2.getRenda());
+        System.out.println("Sexo: " + cliente2.getSexo());
+        System.out.println("Ano de Nascimento: " + cliente2.getAnoNascimento());        
+        System.out.println();
+
         
     }
     
