@@ -4,6 +4,29 @@ public class Cliente{
     private double renda;
     private char sexo;
     private int anoNascimento;
+    private Boolean especial;
+
+    public Cliente(){
+        System.out.println("Criando o método construtor sem parâmetros.");        
+        double aleatorio = Math.random();
+        if (aleatorio > 0.5)
+            especial = true;
+    }
+
+    public Cliente(double renda, char sexo){
+        this();
+        System.out.println("Criando o método construtor com parâmetros.");
+        this.renda = renda;
+        this.sexo = sexo;
+    }
+    
+    public void isEspecial(Boolean especial){
+            this.especial = especial;
+    }
+
+    public Boolean isEspecial(){
+        return especial;
+    }
 
     public double getRenda(){
         return renda;
